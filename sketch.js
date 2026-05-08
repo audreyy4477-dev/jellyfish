@@ -1,8 +1,11 @@
 let img;
+let img2;
 
 // Load the image.
 function preload() {
   img = loadImage('/assets/Jellyfish.png');
+    img2 = loadImage('/assets/Planet.png');
+
 }
 
 function setup() {
@@ -26,9 +29,9 @@ function mousePressed() {
 
 function mouseDragged() {
   // Resize the image.
-  img.resize(100, 100);
+  img2.resize(100, 100);
   // Display the resized image.
-  image(img, mouseX, mouseY);
+  image(img2, mouseX, mouseY);
 
 }
 
